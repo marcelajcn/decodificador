@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>D3C0D1F1C4D0R</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://alura.com.br" class="logo-nav"></a>
+            <div class="botao-nav">
+                <button id="dark" onclick="contraste()" class="switch-mode">&#128161;</button>
+            </div>
+    </header>
+
+    <main>
+        <section class="original">
+            <article>
+                <textarea type="text" id="message" cols="30" rows="10" maxlength="1000" placeholder="Digite aqui o seu texto..."></textarea>
+            </article>
+
+            <p>&#9888; Apenas letras minúsculas e sem acentos</p>
+            <div class="botoes-div">
+                <button class="botao-1" onclick="crypto()" id="crypto">Criptografar</button>
+
+                <button class="botao-2" onclick="decrypto()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section >
+            <article class="cifrado">
+                <div class="oculto" id="conteudo_cifrado">
+                    <p id="conteudo"></p>
+                </div>
+                
+                <div class="sem_conteudo" id="sem_conteudo">
+                    <div class="img-search"></div>
+                    <h3>Não há nenhuma mensagem aqui.</h3>
+                    <p> Por favor, escreva uma mensagem para poder criptografar ou descriptografar.</p>
+                </div>
+                <div class="btns" id="btn-visibility">
+                    <button class="botao-2" id="copiar" onclick="copiar()">Copiar</button>
+                    <button class="botao-2" id="limpar" onclick="limpar()">Limpar</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+      
+    </footer>
+    <script src="/functions.js"></script>
+</body>
+</html>
